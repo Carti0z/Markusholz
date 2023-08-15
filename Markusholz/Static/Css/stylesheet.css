@@ -1,0 +1,57 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.content{
+    width: 60%;
+    margin: 250px auto 0;
+    text-align: center;
+    color: #fff;
+}
+.content h5{
+    font-size: 40px;
+}
+
+.content h6{
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight:100;
+    line-height: 25px;
+}
+.build{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifS;
+}
